@@ -27,15 +27,7 @@ interface CoinHolding {
     value: number;
 }
 
-// EDITABLE VALUES: Set the USD value for each coin here
-// The system will automatically calculate the matching quantity based on live prices
-const INITIAL_VALUES_USD: Record<string, number> = {
-    BTC: 6500.00,
-    ETH: 0.00,
-    USDT: .00,
-    SOL: 0.00,
-    BNB: 0.00
-};
+import { INITIAL_VALUES_USD } from '../config/portfolio';
 
 
 const PortfolioPage = () => {

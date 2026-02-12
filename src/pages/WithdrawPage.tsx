@@ -70,15 +70,7 @@ const assets: Asset[] = [
     }
 ];
 
-// EDITABLE VALUES: Set the USD value for each coin here
-// The system will automatically calculate the matching quantity based on live prices
-const INITIAL_VALUES_USD: Record<string, number> = {
-    BTC: 100.00,
-    ETH: 100.00,
-    USDT: 100.00,
-    SOL: 100.00,
-    BNB: 0.00
-};
+import { INITIAL_VALUES_USD } from '../config/portfolio';
 
 const WithdrawPage = () => {
     const navigate = useNavigate();
